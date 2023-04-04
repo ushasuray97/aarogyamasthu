@@ -22,6 +22,8 @@ import Admins from './component/Views/Admin/Admins.js';
 import { addAdmin } from './store/reducers/manageAdmins/addAdminSlice.js';
 import AddAdmin from './component/Views/Admin/AddAdmin.js';
 import AreawiseSearch from './component/Views/Admin/AreawiseSearch.js';
+import TeamLeaders from './component/Views/Teams/TeamLeaders.js';
+import TeamMembers from './component/Views/Teams/TeamMembers.js';
 const MainRoutes = () => {
   return (
     <>
@@ -43,6 +45,8 @@ const MainRoutes = () => {
             
             <Route exact path="/admin/addadmin" element={<AddAdmin />} />
             <Route exact path='/admin/search' element={<AreawiseSearch/>}/>
+            <Route exact path='/team/teamleaders' element={<TeamLeaders/>}/>
+            <Route exact path='/team/teammembers' element={<TeamMembers/>}/>
             {/* <Route exact path="/projects/editproject/:id" element={<AddProject />} /> */}
             <Route exact path="/managerole" element={<ManageRole />} />
             <Route exact path="/adduserspopup" element={<AddUsersPopup />} />

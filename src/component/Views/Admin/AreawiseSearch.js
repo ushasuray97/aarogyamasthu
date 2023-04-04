@@ -70,7 +70,7 @@ export default function AreawiseSearch() {
         </Grid>
         <Grid container>
         <Grid item xs={3} ><Button sx={AdminsStyles.addButton}>
-            <Link to="/admin/addadmin" className="routerLink">Team Members</Link></Button>
+            <Link to="/team/teammembers" className="routerLink">Team Members</Link></Button>
          </Grid>
         </Grid>
         

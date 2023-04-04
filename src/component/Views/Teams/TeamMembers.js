@@ -43,7 +43,7 @@ function TotalAvatars() {
 
 
 
-export default function TeamLeaders() {
+export default function TeamMembers() {
   const dispatch = useDispatch();
   const { getAdminsData} = useSelector((state) => state.getAdmins);
 
@@ -128,7 +128,7 @@ export default function TeamLeaders() {
     <>
       <CustomBox.CustomMainBox>
       <Grid container>
-          <Grid item xs={9} ><Typography sx={AdminsStyles.mainHeading}>Team Leaders</Typography></Grid>
+          <Grid item xs={9} ><Typography sx={AdminsStyles.mainHeading}>Team Members</Typography></Grid>
       </Grid>
         <Box sx={AdminsStyles.adminListContainer}>
           
