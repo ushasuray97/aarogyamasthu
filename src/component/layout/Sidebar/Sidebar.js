@@ -15,8 +15,8 @@ import { CustomList } from "../../../styles/styled-components/sideMenu/list.styl
 import { SidebarStyles } from "./SidebarStyle";
 import TopMenu from "./TopMenu";
 //image
-import LOGO1 from '../../../assets/images/LMS-logo.png';
-import Logo from '../../../assets/images/LMS-logo.png';
+import LOGO1 from '../../../assets/images/aarogya-logo.jpeg';
+import Logo from '../../../assets/images/aarogya-logo.jpeg';
 const BottomList = {
   menu: [
     { name: "Settings", link: "#", icon: <SettingsOutlinedIcon /> },

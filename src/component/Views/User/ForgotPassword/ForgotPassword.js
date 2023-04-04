@@ -23,7 +23,7 @@ import instagram from "../../../../assets/images/instagram.svg";
 //toster notification
 import LoginToster from "../../../tosterMessage/LoginToster";
 import { loginUser } from "../../../../store/reducers/LoginSlice"; 
-import logo from "../../../../assets/images/LMS-logo.png";
+import logo from "../../../../assets/images/aarogya-logo.jpeg";
 import loginBanner from '../../../../assets/images/best_real_estate.jpg'
 
 

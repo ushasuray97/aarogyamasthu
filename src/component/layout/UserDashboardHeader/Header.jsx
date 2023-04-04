@@ -7,7 +7,7 @@ import {
   Button,
 } from "@mui/material";
 import { Link } from "react-router-dom"; 
-import logo from "../../../assets/images/LMS-logo.png";
+import logo from "../../../assets/images/aarogya-logo.jpeg";
 import userlogin from "../../../assets/images/user.svg"; 
 import Box from "@mui/material/Box"; 
 import { IconButton } from '@mui/material';

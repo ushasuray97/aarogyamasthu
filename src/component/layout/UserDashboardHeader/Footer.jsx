@@ -10,7 +10,7 @@ import {
   ThemeProvider,
   createTheme, 
 } from '@mui/material/styles';
-import logo from "../../../assets/images/LMS-logo.png"; 
+import logo from "../../../assets/images/aarogya-logo.jpeg"; 
   import LinkedInIcon from '@mui/icons-material/LinkedIn';
   import WhatsAppIcon from '@mui/icons-material/WhatsApp';
   import FacebookIcon from '@mui/icons-material/Facebook';

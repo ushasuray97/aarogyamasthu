@@ -30,8 +30,8 @@ const Overview = () => {
       <Box sx={HomeStyles.TopContainer}>
         <Grid container>
           {TopList.menu.map((item, index) => (
-            <Grid key={index} item xs={2} sx={HomeStyles.TopBoxSetting}>
-              <Stack direction="row" alignItems="center" gap={1}>
+            <Grid key={index} item xs={5} sx={HomeStyles.TopBoxSetting}>
+              <Stack direction="row" alignItems="center" gap={10}>
                 <CustomIconButton sx={HomeStyles.avatarBtn}>
                   <img alt="Bemy Sharp" src={item.icon} />
                 </CustomIconButton>
