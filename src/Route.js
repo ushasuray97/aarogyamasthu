@@ -7,8 +7,7 @@ import Home from './component/Views/Home/Home';
 import Dashboard from "./component/Views/Dashboard/Dashboard";
 import MainDashboard from "./component/layout/MainDashboard";
 import ProtectedRoute from './ProtectedRoute.js';
-import Projects from './component/Views/Projects/Projects';
-import AddProject from './component/Views/Projects/AddProject.js';
+
 import ManageRole from './component/Views/ResourceAllocation/ManageRole/ManageRole.js';
 import ManageUsers from './component/Views/ResourceAllocation/ManageUsers/ManageUsers.js';
 import BillingManagement from './component/Views/BillingManagement/BillingManagement.js';
@@ -20,6 +19,9 @@ import UserDashboardPage from './component/Views/User/UserDashboard/Dashboard';
 import AboutUsPage from './component/Views/User/AboutUs/AboutUs';
 import ViewMorePage from './component/Views/User/ViewMore/ViewMore';
 import Admins from './component/Views/Admin/Admins.js';
+import { addAdmin } from './store/reducers/manageAdmins/addAdminSlice.js';
+import AddAdmin from './component/Views/Admin/AddAdmin.js';
+import AreawiseSearch from './component/Views/Admin/AreawiseSearch.js';
 const MainRoutes = () => {
   return (
     <>
@@ -38,9 +40,10 @@ const MainRoutes = () => {
             <Route exact path="/adminhome" element={<Admins/>} />
             <Route exact path="/dashboard" element={<Dashboard />} />
             <Route exact path="/manageprofile" element={<ManageProfile />} />
-            <Route exact path="/projects" element={<Projects />} />
-            <Route exact path="/projects/addproject" element={<AddProject />} />
-            <Route exact path="/projects/editproject/:id" element={<AddProject />} />
+            
+            <Route exact path="/admin/addadmin" element={<AddAdmin />} />
+            <Route exact path='/admin/search' element={<AreawiseSearch/>}/>
+            {/* <Route exact path="/projects/editproject/:id" element={<AddProject />} /> */}
             <Route exact path="/managerole" element={<ManageRole />} />
             <Route exact path="/adduserspopup" element={<AddUsersPopup />} />
             <Route exact path="/manageusers" element={<ManageUsers/>} />

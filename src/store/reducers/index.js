@@ -24,6 +24,9 @@ import { getUserSlice } from './manageProfile/getUser';
 //Manage Projects
 import {addProjectSlice} from './manageProjects/addProjectSlice';
 import { getProjectsSlice } from './manageProjects/getProjectSlice';
+// Manage admins
+import {addAdmin, addAdminSlice} from './manageAdmins/addAdminSlice';
+import { getAdminsSlice } from './manageAdmins/getAdminSlice';
 
 export const reducer = combineReducers({ 
    /// Login 
@@ -51,6 +54,10 @@ export const reducer = combineReducers({
     getUser:getUserSlice.reducer,
     //Manage Projects
     addProject:addProjectSlice.reducer,
-    getProjects:getProjectsSlice.reducer
+    getProjects:getProjectsSlice.reducer,
+    // Manage admins
+    addAdmin:addAdminSlice.reducer,
+    getAdmins:getAdminsSlice.reducer
+
 
 })     

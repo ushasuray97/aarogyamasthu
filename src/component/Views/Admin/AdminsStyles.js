@@ -1,5 +1,5 @@
 export const AdminsStyles = {
-    projectListContainer: {
+    adminListContainer: {
       height: "700px",
       width: "96%",
       margin: "30px",
@@ -52,7 +52,7 @@ export const AdminsStyles = {
     textfield: {
       padding: "10px"
     },
-    projectAddContainer: {
+    adminAddContainer: {
       height: "auto",
       width: "96%",
       margin: "30px",

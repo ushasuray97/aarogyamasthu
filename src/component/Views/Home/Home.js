@@ -9,7 +9,7 @@ import Stack from "@mui/material/Stack";
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import { useSelector, useDispatch } from "react-redux";
 //custom files
-import LinearWithValueLabel from "../Projects/LinearProgressWithLabel";
+import LinearWithValueLabel from "../Admin/LinearProgressWithLabel";
 import { HomeStyles } from "./HomeStyles";
 import { CustomDataGrid } from "../../../styles/styled-components/datagrid.style";
 import { CustomAvatar } from "../../../styles/styled-components/avatar/avatar.style";

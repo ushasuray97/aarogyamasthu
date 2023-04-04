@@ -21,11 +21,11 @@ import { getDepartments, getDepartmentsByName} from "../../../store/reducers/res
 import { getUser, clearState } from '../../../store/reducers/manageProfile/getUser';
 import { setOptions } from 'highcharts';
 
-export default function ManageAdminPopup({ addAdmin, setAdmin, projectDetails }) {
+export default function ManageAdminPopup({ addAdmin, setAdmin, adminDetails }) {
     const dispatch = useDispatch();
     const { getDepartmentsByNameData } = useSelector((state) => state.getDepartmentsSlice);
     const { isFetching, isSuccess, isError, responseData } = useSelector((state) => state.getUser);
-    const techData = projectDetails?.technologies?.split(',')
+    const techData = adminDetails?.technologies?.split(',')
     const [allDepartments, setAllDepartments] = React.useState("");
     const [department, setDepartment] = useState("")
     const [userData, setUserData] = useState(responseData);
@@ -37,7 +37,7 @@ export default function ManageAdminPopup({ addAdmin, setAdmin, projectDetails })
             department_id: ""
         },
         validationSchema: yup.object({
-            name: yup.string().required("Enter Screen Name")
+            name: yup.string().required("Enter Name")
         }),
         onSubmit: values => {
         },
@@ -110,9 +110,9 @@ export default function ManageAdminPopup({ addAdmin, setAdmin, projectDetails })
                                     fullWidth
                                     type="text"
                                     variant="outlined"
-                                    label="Project Name"
+                                    label="Name"
                                     name="name"
-                                    value={projectDetails.name || ''}
+                                    value={adminDetails.name || ''}
                                     disabled
                                 />
                             </Grid>

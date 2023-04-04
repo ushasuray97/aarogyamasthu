@@ -43,7 +43,7 @@ function TotalAvatars() {
 
 
 
-export default function Admins() {
+export default function TeamLeaders() {
   const dispatch = useDispatch();
   const { getAdminsData} = useSelector((state) => state.getAdmins);
 
@@ -127,21 +127,7 @@ export default function Admins() {
   return (
     <>
       <CustomBox.CustomMainBox>
-        <Grid container>
-          <Grid item xs={9} ><Typography sx={AdminsStyles.mainHeading}>Admins List</Typography></Grid>
-          <Grid item xs={3} ><Button sx={AdminsStyles.addButton}>
-            <Link to="/admin/search" className="routerLink">Areawise Search</Link></Button> 
-          </Grid>
-        </Grid>
-        <Grid container>
-        <Grid item xs={9} ><Button sx={AdminsStyles.addButton}>
-            <Link to="/admin/addadmin" className="routerLink"></Link></Button>
-         </Grid>
-         <Grid item xs={1} ><Button sx={AdminsStyles.addButton}>
-            <Link to="/admin/addadmin" className="routerLink">Add Admin</Link></Button>
-         </Grid>
         
-        </Grid>
         <Box sx={AdminsStyles.adminListContainer}>
           
               <CustomDataGrid

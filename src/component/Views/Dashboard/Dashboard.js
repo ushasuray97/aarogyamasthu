@@ -10,7 +10,7 @@ import Stack from "@mui/material/Stack";
 import { CustomDataGrid } from "../../../styles/styled-components/datagrid.style";
 import { CustomAvatar } from "../../../styles/styled-components/avatar/avatar.style";
 import { CustomAvatarGroup } from "../../../styles/styled-components/avatar/avatargroup.style";
-import LinearWithValueLabel from "../Projects/LinearProgressWithLabel";
+import LinearWithValueLabel from "../Admin/LinearProgressWithLabel";
 import * as CustomBox from "../../../styles/styled-components/box.style";
 import { HomeStyles } from "./DashboardStyles";
 import Overview from "./Overview";
